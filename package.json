@@ -17,14 +17,12 @@
     "url": "https://github.com/sf-wdi-labs/super-crud-api/issues"
   },
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "cors": "^2.8.3",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "mongoose": "^4.9.3"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.6"
   },
-  "devDependencies": {
-    "node-inspector": "0.12.3"
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/sf-wdi-labs/super-crud-api#readme"
 }
