@@ -27,7 +27,7 @@ module.exports = {
       err ? res.status(500).json({ error: err.message }) :
         Book.create(seedBooks, function (err, createdBooks) {
           err ? res.status(500).json({ error: err.message }) :
-            res.redirect('/books');
+            res.redirect('/api/books');
         });
       });
   },

@@ -29,7 +29,7 @@ module.exports = {
       err ? res.status(500).json({ error: err.message }) :
         Todo.create(seedTodos, function (err, createdTodos) {
           err ? res.status(500).json({ error: err.message }) :
-            res.redirect('/todos');
+            res.redirect('/api/todos');
         });
       });
   },

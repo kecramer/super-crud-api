@@ -25,7 +25,7 @@ module.exports = {
       err ? res.status(500).json({ error: err.message }) :
         Pokemon.create(seedPokemon, function (err, createdPokemons) {
           err ? res.status(500).json({ error: err.message }) :
-            res.redirect('/pokemon');
+            res.redirect('/api/pokemon');
         });
       });
   },

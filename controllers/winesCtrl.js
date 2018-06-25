@@ -26,7 +26,7 @@ module.exports = {
       err ? res.status(500).json({ error: err.message }) :
         Wine.create(seedWines, function (err, createdWines) {
           err ? res.status(500).json({ error: err.message }) :
-            res.redirect('/wines');
+            res.redirect('/api/wines');
         });
       });
   },
