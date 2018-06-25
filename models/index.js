@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 mongoose.connect(
-  process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL ||
+  process.env.MONGODB_URI ||
   'mongodb://localhost/super-crud-api'
 );
 var Book = require('./book');
