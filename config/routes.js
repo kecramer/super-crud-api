@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const ctrl = require('../controllers');
-const todos = require('./todos')
 
 // require models and seed data
 const seedBooks = require('../seeds/books'),
