@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const ctrl = require('../controllers');
-
+const todos = require('./todos')
 
 // require models and seed data
 const seedBooks = require('../seeds/books'),
@@ -52,9 +52,4 @@ router.route('/books/:bookId')
   .put(ctrl.books.update)
   .delete(ctrl.books.destroy);
 
-
-
-// HOME & RESET ROUTES
-
-
-module.exports = router
+module.exports = router;
