@@ -17,18 +17,6 @@ app.use(express.static(__dirname + '/public'));
 // set view engine to ejs
 app.set('view engine', 'ejs');
 
-
-var ctrl = require('./controllers');
-
-// API ROUTES
-
-/*
- * BOOK API ENDPOINTS
- */
-
-// get all books
-
-
 app.get('/', function (req, res) {
   res.render('site/index');
 });
@@ -38,7 +26,6 @@ app.get('/reset', function (req, res) {
 });
 
 app.use('/api', routes);
-
 
 // listen on port (production or localhost)
 app.listen(process.env.PORT || 3000, function() {
