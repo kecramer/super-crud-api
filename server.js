@@ -26,6 +26,10 @@ app.get('/reset', function (req, res) {
 });
 
 app.use('/api', routes);
+// /api/todos
+// /api/wines
+// /api/pokemon
+// /api/books
 
 // listen on port (production or localhost)
 app.listen(process.env.PORT || 3000, function() {

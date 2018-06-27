@@ -1,13 +1,8 @@
-var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+var mongoose = require('mongoose');
 
-var BookSchema = new Schema({
+module.exports =  mongoose.model('Book', new mongoose.Schema({
   title: String,
   author: String,
   image: String,
   releaseDate: String
-});
-
-var Book = mongoose.model('Book', BookSchema);
-
-module.exports = Book;
+}));
