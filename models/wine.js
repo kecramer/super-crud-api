@@ -1,15 +1,10 @@
-var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+var mongoose = require('mongoose');
 
-var WineSchema = new Schema({
+module.exports = mongoose.model('Wine', new mongoose.Schema({
   name: String,
   year: String,
   country: String,
   description: String,
   image: String,
   price: Number
-});
-
-var Wine = mongoose.model('Wine', WineSchema);
-
-module.exports = Wine;
+}));

@@ -1,13 +1,9 @@
-var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+var mongoose = require('mongoose');
 
-var PokemonSchema = new Schema({
+module.exports = mongoose.model('Pokemon', new mongoose.Schema({
   name: String,
   pokedex: String,
   evolves_from: String,
   image: String
-});
+}));
 
-var Pokemon = mongoose.model('Pokemon', PokemonSchema);
-
-module.exports = Pokemon;
